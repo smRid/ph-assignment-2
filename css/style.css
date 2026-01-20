@@ -299,7 +299,7 @@ h2 {
 
 .choose {
     padding: 120px 0;
-    background: #412567;
+    background: #230E3D;
 }
 
 .choose-wrap {
@@ -343,7 +343,6 @@ h2 {
     padding: 120px 0;
 }
 
-/* Utility Classes */
 .flex {
     display: flex;
 }
@@ -374,7 +373,6 @@ h2 {
     flex-direction: column;
 }
 
-/* Card Image with Play Icon Overlay */
 .card-img-wrap {
     position: relative;
     width: 100%;
@@ -440,6 +438,84 @@ h2 {
     color: #00ff88;
     font-size: 14px;
     font-weight: 500;
+}
+
+
+/* ============================================
+   HOST SECTION (Inside Feature)
+   ============================================ */
+
+.host-wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.host-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.host-person {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    background: #35116566;
+    border-radius: 40px;
+}
+
+.host-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.host-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-details h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.host-text {
+    line-height: 24px;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+.icon-group {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #533C72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    border-color: #9100F8;
+    background: rgba(145, 0, 248, 0.2);
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -576,5 +652,43 @@ h2 {
     .card-icon {
         width: 50px;
         height: 50px;
+    }
+
+    /* Host Section Responsive */
+    .host-wrapper {
+        margin-top: 40px;
+    }
+
+    .host-title {
+        margin-bottom: 24px;
+    }
+
+    .host-person {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .host-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .host-details {
+        align-items: center;
+    }
+
+    .host-details h5 {
+        font-size: 20px;
+    }
+
+    .host-text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .icon-group {
+        justify-content: center;
     }
 }
