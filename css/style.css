@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1A0B2E;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.line-height-20 {
+    line-height: 20px;
+}
+
+.line-height-24 {
+    line-height: 24px;
+}
+
+
+/* ============================================
+   NAVBAR SECTION
+   ============================================ */
+
+nav {
+    background-color: #1A0B2E;
+    border-bottom: 1px solid #412567;
+    padding: 30px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Tech-logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.Wave-logo {
+    background: linear-gradient(370deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Navigation Menu */
+.menu-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.menu-items {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-items:hover {
+    color: #cc5be9;
+}
+
+
+.grad-btn {
+    padding: 13px 16px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(370deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.grad-btn:hover {
+    background: linear-gradient(-170deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+
+.green-btn {
+    padding: 13px 16px;
+    border-radius: 50px;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.green-btn:hover {
+    color: black;
+    background-color: #00FF88;
+}
+
+.responsive-menu {
+    color: white;
+    display: none;
+}
+
+
+/* ============================================
+   BANNER SECTION
+   ============================================ */
+
+.banner {
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gradient-img-wrap {
+    max-width: 460px;
+    max-height: 460px;
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+    position: relative;
+    z-index: 2;
+}
+
+.gradient-img {
+    width: 100%;
+    height: 100%;
+}
+
+.microphone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.new {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background: #00FF88;
+    display: inline;
+    border: 1px solid #1A0B2E;
+    border-radius: 50px;
+    box-shadow: 0 3px 27px hsla(152, 100%, 50%, 0.5);
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.banner-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-heading {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+}
+
+.primary-paragraph {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 576px) {
+
+    /* Navbar Responsive */
+    nav {
+        padding: 20px 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .Tech-logo {
+        font-size: 26px;
+    }
+
+    .menu,
+    .btn-grp {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: flex;
+    }
+
+    /* Banner Responsive */
+    .banner {
+        background-image: url(../assets/hero-bg.png);
+        padding: 80px 0 60px;
+    }
+
+    .gradient-img-wrap {
+        max-width: 220px;
+        max-height: 220px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .microphone {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .new {
+        font-size: 14px;
+        padding: 6px 12px;
+        top: -5%;
+        right: 5%;
+    }
+
+    .banner-content {
+        gap: 32px;
+        padding: 20px 0 40px;
+    }
+
+    .primary-heading {
+        font-size: 36px;
+    }
+}
