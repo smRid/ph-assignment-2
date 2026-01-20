@@ -167,7 +167,6 @@ nav {
     border: none;
 }
 
-/* NEW Badge - Floating label with glow effect */
 .new {
     font-size: 18px;
     font-weight: 600;
@@ -442,7 +441,7 @@ h2 {
 
 
 /* ============================================
-   HOST SECTION (Inside Feature)
+   HOST SECTION 
    ============================================ */
 
 .host-wrapper {
@@ -519,8 +518,45 @@ h2 {
 }
 
 
+/* ============================================
+   FOOTER SECTION 
+   ============================================ */
 
+footer {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.social-grp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.footer-text {
+    color: #FAFAFA;
+    text-align: center;
+}
 
 /* ============================================
    RESPONSIVE STYLES
@@ -589,7 +625,7 @@ h2 {
         font-size: 32px;
     }
 
-    /* About Section Responsive */
+    /* About Responsive */
     .about-footer,
     .about-Wrappar {
         gap: 40px;
@@ -599,7 +635,7 @@ h2 {
         font-size: 40px;
     }
 
-    /* Choose Section Responsive  */
+    /* Choose Responsive  */
     .choose {
         padding: 40px 0;
     }
@@ -622,7 +658,7 @@ h2 {
         grid-column: span 1;
     }
 
-    /* Feature Section Responsive */
+    /* Feature Responsive */
     .feature {
         padding: 40px 0;
     }
@@ -654,7 +690,7 @@ h2 {
         height: 50px;
     }
 
-    /* Host Section Responsive */
+    /* Host Responsive */
     .host-wrapper {
         margin-top: 40px;
     }
@@ -690,5 +726,32 @@ h2 {
 
     .icon-group {
         justify-content: center;
+    }
+
+    /* Footer Responsive */
+    footer {
+        padding: 60px 0;
+    }
+
+    .footer-content {
+        gap: 24px;
+    }
+
+    .footer-img {
+        max-width: 200px;
+    }
+
+    .social-grp {
+        flex-wrap: wrap;
+        gap: 20px 40px;
+        justify-content: center;
+    }
+
+    .social-icon {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 14px;
     }
 }
